@@ -1,0 +1,51 @@
+// main: ../style.less
+
+.about_inner {
+    display: flex;
+    padding: 100px 0;
+}
+
+.about_img {
+    width: 50%;
+    
+}
+
+.about_content {
+    width: 50%;
+    
+    
+    padding: 0 85px;
+}
+
+.about_title {
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222;
+
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #fcac45;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+.about_title span {
+    font-weight: 700;
+}
+
+.about_text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #898989;
+    width: 100%;
+}

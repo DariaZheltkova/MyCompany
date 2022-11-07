@@ -1,0 +1,42 @@
+// main: ../style.less
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav_link {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    position: relative;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:after {
+        content: "";
+        height: 3px;
+        width: 0;
+        background-color: #fcac45;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        z-index: 1;
+
+        transition: width .2s linear;
+    }
+
+    &:hover { 
+        
+        &:after{
+        width: 100%;
+        }
+
+    }
+}

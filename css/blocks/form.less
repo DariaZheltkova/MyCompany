@@ -1,0 +1,38 @@
+// main: ../style.less
+
+.form_label {
+	display: inline-block; 
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #636363;
+
+	
+
+			&:after {
+				content: "*";
+				color: #db0000;
+				font-weight: 700;
+				position: relative;
+    		top: -1px;
+			}
+}
+
+.form_input,
+.form_textarea {
+	display: block;
+	font-family: inherit;
+	border: 1px solid #999;
+	width: 100%;
+	
+		&:focus {
+			outline: 0;
+			border-color: #de8817;
+		}
+}
+
+.form_textarea {
+	resize: none;
+	height: 165px;
+	max-width: 750px;
+}
