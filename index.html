@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyCompany</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap"
@@ -16,37 +15,25 @@
 <body>
 
     <!-- Header -->
-    <header class="header">
+    <div class="header">
         <div class="container">
-            <div class="header_inner">
+            <div class="headr_inner">
                 <div class="header_logo">
                     <a href="#">mycompany</a>
                 </div>
-                <nav class="nav">
+                <nav>
                     <ul class="nav_list">
-                        <li class="nav_item">
-                            <a class="nav_link" href="#">home</a>
-                        </li>
-                        <li class="nav_item">
-                            <a class="nav_link" href="#">About</a>
-                        </li>
-                        <li class="nav_item">
-                            <a class="nav_link" href="#">services</a>
-                        </li>
-                        <li class="nav_item">
-                            <a class="nav_link" href="#">portfolio</a>
-                        </li>
-                        <li class="nav_item">
-                            <a class="nav_link" href="#">testimonials</a>
-                        </li>
-                        <li class="nav_item">
-                            <a class="nav_link" href="#">contact</a>
-                        </li>
+                        <li class="nav_item"><a href="#" class="nav_link">home</a></li>
+                        <li class="nav_item"><a href="#" class="nav_link">about</a></li>
+                        <li class="nav_item"><a href="#" class="nav_link">services</a></li>
+                        <li class="nav_item"><a href="#" class="nav_link">portfolio</a></li>
+                        <li class="nav_item"><a href="#" class="nav_link">testimonials</a></li>
+                        <li class="nav_item"><a href="#" class="nav_link">contact</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-    </header>
+    </div>
 
     <!-- Intro -->
     <section class="intro">
@@ -69,15 +56,16 @@
 
                 <div class="about_content">
                     <div class="about_title">Some words <span>about us</span></div>
-                    <div class="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex
-                        quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus .</div>
-
-
+                    <p class="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem
+                        maiores ullam quis, at asperiores minus ad eaque maxime possimus. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad
+                        eaque maxime possimus.</p>
+                    <p class="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem
+                        maiores ullam quis, at asperiores minus ad eaque maxime possimus. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad
+                        eaque maxime possimus.</p>
                 </div>
-
             </div>
-
-
         </div>
     </section>
 
@@ -262,16 +250,16 @@
 
     <!-- Contact -->
     <section class="contact">
-        <div class="container">
+        <!-- <div class="container"> -->
             <div class="section_header">
                 <h1 class="section_title title--black">contact us</h1>
                 <div class="section_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem
                     maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit
                     excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
             </div>
-            <form action="/" metod="post">
-                <label for="imput-text" class="form_label">Name </label>
-                <input name="imput-text" id="imput-text" class="textarea"></input>
+            <form class="form" action="/" metod="post">
+                <label for="input-text" class="form_label">Name </label>
+                <input name="input-text" id="input-text" class="textarea"></input>
                 <label for="input-email" class="form_label">Email address &#9913;</label>
                 <input type="text" class="form_input" name="input-email" id="input-email"></input>
                 <label for="input-message" class="form_label">Message &#9913;</label>
@@ -280,7 +268,7 @@
             <div class="text_right">
                 <button class="btn" type="submit">send</button>
             </div>
-        </div>
+        <!-- </div> -->
     </section>
 
     <footer class="footer">

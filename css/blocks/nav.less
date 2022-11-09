@@ -1,12 +1,29 @@
 // main: ../style.less
 
-.nav {
+// .nav {
+//     display: flex;
+//     align-items: center;
+// }
+
+.nav_list {
+    list-style: none;
+    padding: 0;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
-.nav_link {
+.nav_item {
     margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
+.nav_link {
+    // margin-right: 30px;
     text-decoration: none;
     color: #fff;
     font-size: 14px;
@@ -15,9 +32,9 @@
 
     position: relative;
 
-    &:last-child {
-        margin-right: 0;
-    }
+    // &:last-child {
+    //     margin-right: 0;
+    // }
 
     &:after {
         content: "";
